@@ -1,0 +1,215 @@
+body {
+    background-color: #1e1d1d;
+    background-attachment: fixed;
+    background-size: cover; /* Ensures the gradient/image covers the viewport */
+    color: #d2b5b5;
+    font-family: 'Audiowide', sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 70px;
+
+    
+}
+.bg{
+  background-color: black;
+}
+.navbar{
+  position: fixed; /* Keeps the navbar at the top */
+  top: 0;
+  width: 100%; /* Full width of the page */
+  z-index: 1000; /* Ensures it's above other elements */
+  background-color: #1e1d1d; /* Match the design */
+  padding: 10px;
+}
+.nav-link{
+  font-size: 25px;
+
+  
+}
+.navbar-nav{
+  margin-left: auto;
+}
+.nav-pills{
+  font-size: 10px;
+}
+.custom_nav-link{
+  font-size: 1px;
+}
+
+.content1{
+  margin-left: 430px;
+}
+.typing-effect{
+  border-right: 2px solid  rgb(30, 29, 29); /* Blinking cursor */
+  width: 0; /* Initially hidden */
+  animation: typing 3s steps(300, end) forwards, blink-caret 0.6s step-end 1;
+  display: inline-block;
+  font-size: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+
+}
+.type:nth-child(1) .typing-effect{
+  animation-delay: 0s;
+}
+.type:nth-child(2) .typing-effect{
+  animation-delay: 3s;
+}
+
+
+
+@keyframes typing {
+  from {width: 0;}
+  to { width: 100%;}
+}
+@keyframes blink-caret{
+  from, to {
+    border-color: transparent;
+  }
+  50% {border-color: white;}
+}
+
+.typing-effect1{
+  border-right: 2px solid  rgb(30, 29, 29); /* Blinking cursor */
+  width: 0; /* Initially hidden */
+  animation: typing 3s steps(300, end) infinite, blink-caret 0.6s step-end 1;
+  display: inline-block;
+  font-size: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+
+}
+.type:nth-child(1) .typing-effect1{
+  animation-delay: 0s;
+}
+
+
+
+
+@keyframes typing {
+  from {width: 0;}
+  to { width: 100%;}
+}
+@keyframes blink-caret{
+  from, to {
+    border-color: transparent;
+  }
+  50% {border-color: white;}
+}
+.typing-effect2{
+  border-right: 2px solid  rgb(30, 29, 29); /* Blinking cursor */
+  width: 0; /* Initially hidden */
+  animation: typing 3s steps(300, end) forwards, blink-caret 0.6s step-end 1;
+  display: inline-block;
+  font-size: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+
+}
+
+
+
+/* ghost*/
+.main{
+  width: 300px;       
+  height: 300px;     
+  border-radius: 50%; 
+  object-fit: cover;  
+  background-color: transparent;
+  margin-right: 30px;
+  border: 5px solid #00BFFF;
+  box-shadow: 0 0 15px #00BFFF, 0 0 30px #00BFFF, 0 0 45px #00BFFF;
+  float: right;
+  position: relative;
+  transform: translateX(-100%);
+  animation: slideIn 1s ease forwards;
+}
+@keyframes slideIn {
+  to{
+    transform: translateX(0)
+  }
+  
+}
+.main1{
+  margin-top: 70px;
+  padding-top: 10px;
+  width: 300px;       
+  height: 300px;     
+  border-radius: 50%; 
+  object-fit: cover;  
+  background-color: transparent;
+  margin-right: 50px;
+  border: 5px solid #00BFFF;
+  box-shadow: 0 0 15px #00BFFF, 0 0 30px #00BFFF, 0 0 45px #00BFFF;
+  float: right;
+  position: relative;
+  transform: translateX(-100%);
+  animation: slideIn 1s ease forwards;
+}
+@keyframes slideIn {
+  to{
+    transform: translateX(0)
+  }
+  
+}
+/* icons*/
+.icons img {
+  width: 40px;
+  height: 40px;
+  margin-right:20px;
+  z-index: 1;
+  filter: invert(49%) ;
+  padding: 8px;
+}
+.glowing-icons{
+  transition: all 0.3s ease-in-out;
+}
+.glowing-icons:hover{
+  box-shadow: 0 0 15px 15px #00BFFF;
+  transform: scale(1.1);
+  border: 2px solid #00BFFF; /* Glowing border */
+  background-color: rgba(54, 188, 233, 0.2); 
+}
+/* headings*/
+h1{
+  text-shadow: 0 0 1px #00BFFF, 0 0 5px #00BFFF, 0 0 15px #00BFFF ;
+  padding-left: 80px;
+  color: #00BFFF;;
+  font-size: 50px;
+  border: none;
+
+
+}
+.hidden {
+  opacity: 0;
+  transform: translateX(-200px);
+  transition: all 0.7s ease-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.card1 {
+  /* Adjust border width (e.g., 1px, 0.5px) */
+  border: none;
+  box-shadow: 0 0 15px #00BFFF, 0 0 15px #00BFFF, 0 0 15px #00BFFF;
+  background-color: rgb(30, 29, 29) ;
+}
+.card2{
+  width: 50%;
+  padding-left: 120px;
+}
+.card{
+  background-color:  rgb(30, 29, 29);
+  color: white;
+  border: none;
+}
+.education{
+  border: none;
+}
+#carouselExampleCaptions .carousel-inner img {
+  max-height: 300px; /* Adjust height of the images */
+  object-fit: cover; /* Ensure images maintain aspect ratio */
+}
